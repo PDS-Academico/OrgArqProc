@@ -1,0 +1,28 @@
+
+
+main(){
+    escrever("Programa Ackermann - 30/9/2024\n"); //escrever = macro;
+    escrever("Autores: Pedro Duarte dos Santos\n");
+    int m,n;
+    while(true){
+        escrever("Digite os parâmetros m e n para calcular A(m, n) ou -1 para abortar a execução");
+        ler(m); //ler = macro;
+        ler(n);
+        if (m<0||n<0){break;} 
+        int c = Ackermann(m,n);
+        printf("A(%d,%d) = %d", m, n, c)
+    }
+}
+
+int Ackermann(int m, int n){
+    if(m==0){return n+1;}
+    if(n==0){return Ackermann(m-1,1)}
+    return Ackermann(m-1,Ackermann(m,n-1));
+}
+
+
+
+
+
+
+
