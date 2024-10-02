@@ -5,7 +5,7 @@ main(){
     escrever("Autores: Pedro Duarte dos Santos\n");
     int m,n;
     while(true){
-        escrever("Digite os parâmetros m e n para calcular A(m, n) ou -1 para abortar a execução");
+        escrever("Digite os parâmetros m e n para calcular A(m, n) ou -1 para abortar a execução\n");
         ler(m); //ler = macro;
         ler(n);
         if (m<0||n<0){break;} 
